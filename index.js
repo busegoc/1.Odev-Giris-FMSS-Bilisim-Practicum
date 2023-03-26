@@ -8,7 +8,7 @@ async function getData(Number){
             console.log(users)
         }
         async function getPosts(){
-            const {data:posts}= await axios ("https://jsonplaceholder.typicode.com/posts?id="+Number)
+            const {data:posts}= await axios ("https://jsonplaceholder.typicode.com/posts?userId="+Number)
             console.log("Posts:", posts)
         }
 
